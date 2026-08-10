@@ -1,1 +1,30 @@
-
+.projects
+{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap:20px;
+}
+.wedding
+{
+background-color: #f2f2f2;
+border: 1px solid #ccc;
+padding: 20px;
+}
+.potrait
+{
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.landscape
+{
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.event
+{
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
