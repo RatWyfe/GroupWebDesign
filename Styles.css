@@ -47,7 +47,7 @@ transition: transform 0.5s ease;
 .landscape:hover img,
 .event:hover img
 {
-transform: scale(2);
+transform: scale(1.1);
 }
 /* Lightbox Styles */
 #lightbox
