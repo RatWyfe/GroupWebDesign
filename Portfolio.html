@@ -68,6 +68,20 @@
     <footer>
         <p>&copy; 2026 My Portfolio. All rights reserved.</p>
     </footer>
-          
+    <div id="lightbox" onclick="closeImage()">
+<img id="lightbox-img">
+</div>   
+   <script>
+const images = document.querySelectorAll('.projects img');
+images.forEach(function(image) {
+image.addEventListener('click', function() {
+document.getElementById('lightbox').style.display = 'flex';
+document.getElementById('lightbox-img').src = this.src;
+});
+});
+function closeImage() {
+document.getElementById('lightbox').style.display = 'none';
+}
+</script>
 </body>
 </html>
