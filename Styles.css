@@ -4,27 +4,48 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 gap:20px;
 }
-.wedding
+/* Project Styles */
+.wedding,
+.potrait,
+.landscape,
+.event
 {
 background-color: #f2f2f2;
 border: 1px solid #ccc;
 padding: 20px;
+border-radius: 10px;
+transition: all 0.3s ease;
+cursor: pointer;
 }
-.potrait
-{
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    padding: 20px;
+
+/* Navigation Hover */
+nav a:hover{
+color:#d4af37;
 }
-.landscape
+
+/* Project Hover Effects */
+.wedding:hover,
+.potrait:hover,
+.landscape:hover,
+.event:hover
 {
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    padding: 20px;
+transform: translateY(-10px);
+box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
-.event
+.wedding img,
+.potrait img,
+.landscape img,
+.event img
 {
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    padding: 20px;
+width: 100%;
+height: 300px;
+object-fit: cover;
+transition: transform 0.5s ease;
+}
+.wedding:hover img,
+.potrait:hover img,
+.landscape:hover img,
+.event:hover img
+{
+transform: scale(2);
 }
