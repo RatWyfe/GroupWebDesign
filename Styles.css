@@ -3,7 +3,9 @@ body {
     min-height: 100dvh;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    text-align: center;
 }
+
 /*
 Alternate method to doing out footer
 https://www.w3schools.com/howto/howto_css_fixed_footer.asp
@@ -15,18 +17,85 @@ rgb(33, 83, 87) //cyan colour
 rgb(194, 157, 115) //yellow colour
 */
 
-header, footer {
+main {
+    min-width: 80dvw;
+    max-width: 90dvw;
+    background-color: rgb(194, 157, 115);
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+    padding-bottom: 10dvh;
+}
+
+header,
+footer {
     padding: 15px 15px;
     justify-content: space-between;
     display: flex;
     align-items: center;
     background-color: rgb(196, 255, 245);
 }
+
 header img {
     max-width: 124px;
     max-height: 124px;
 }
+
 header div {
     display: flex;
     align-items: center;
+}
+
+/*
+this is just so the navs look like buttons
+*/
+nav a {
+    background-color: rgb(56, 126, 131);
+    color: rgb(33, 83, 87);
+    border-radius: 10%;
+    padding: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    transition: padding 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgb(66, 144, 150);
+    transition: background-color 0.3s ease;
+    padding: 40px;
+    transition: padding 0.3s ease;
+}
+
+.display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr
+}
+
+#clip-base {
+    background-color: lightgray;
+    border-radius: 5%;
+    max-width: 50dvh;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 10px;
+}
+
+#clip {
+    background-color: gray;
+    color: white;
+    border-radius: 5%;
+    max-width: 40dvh;
+    margin: auto;
+    padding: 10px;
+}
+
+#page {
+    border-radius: 5%;
+    margin: auto;
+    max-width: 70dvw;
+    background-color: white;
+    padding: 10px;
 }
