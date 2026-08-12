@@ -1,1 +1,32 @@
+body {
+    margin: 0%;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+/*
+Alternate method to doing out footer
+https://www.w3schools.com/howto/howto_css_fixed_footer.asp
+*/
 
+/*
+Pallet from the logo:
+rgb(33, 83, 87) //cyan colour
+rgb(194, 157, 115) //yellow colour
+*/
+
+header, footer {
+    padding: 15px 15px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: rgb(196, 255, 245);
+}
+header img {
+    max-width: 124px;
+    max-height: 124px;
+}
+header div {
+    display: flex;
+    align-items: center;
+}
