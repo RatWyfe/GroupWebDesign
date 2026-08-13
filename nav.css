@@ -29,13 +29,15 @@ rgb(194, 157, 115) //yellow colour
     padding: 30px;
     transition: background-color 0.5s ease, padding 0.5s ease;
     mask-size: cover;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .linkedin-mask:hover,
 .instagram-mask:hover,
 .facebook-mask:hover,
 .twitter-mask:hover  {
-    background-color: rgb(194, 157, 115);
+    background-color: lineargradient(red, blue, yellow);
     padding: 40px;
     transition: background-color 0.5s ease, padding 0.5s ease;
 }

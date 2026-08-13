@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link rel="Stylesheet" href="Styles.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="lightbox.css">
     <link rel="icon" type="image/x-icon" href="images/fav/favicon.ico">
 </head>
 
@@ -15,7 +16,7 @@
         <div>
             <a href="index.html"><img src="images/logo.png" alt="Page Logo, Camera Showing"></a>
         </div>
-        <nav >
+        <nav>
             <a class="navigation" href="index.html">Home</a>
             <a class="navigation" href="Info.html">Info</a>
             <a class="navigation" href="Portfolio.html" id="selectedSite">Portfolio</a>
@@ -88,14 +89,17 @@
         <p>&copy; 2026 My Portfolio. All rights reserved.</p>
     </footer>
 
-    <script> // JavaScript for lightbox functionality on click, images will pop up in a larger view when clicked */
-        const images = document.querySelectorAll('.projects img');
+    <script>
+        // Updated selector to match your new HTML structure
+        const images = document.querySelectorAll('article img');
+
         images.forEach(function (image) {
             image.addEventListener('click', function () {
                 document.getElementById('lightbox').style.display = 'flex';
                 document.getElementById('lightbox-img').src = this.src;
             });
         });
+
         function closeImage() {
             document.getElementById('lightbox').style.display = 'none';
         }
