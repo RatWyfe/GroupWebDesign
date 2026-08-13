@@ -24,10 +24,10 @@ rgb(194, 157, 115) //yellow colour
 .instagram-mask,
 .facebook-mask,
 .twitter-mask {
-    background-color: rgb(33, 83, 87);
+    background-image: linear-gradient(35deg,rgb(33, 83, 87), rgb(44, 109, 114), rgb(33, 83, 87));
     margin: 0%;
     padding: 30px;
-    transition: background-color 0.5s ease, padding 0.5s ease;
+    transition: background-image 0.5s ease, padding 0.5s ease;
     mask-size: cover;
     display: inline-block;
     vertical-align: middle;
@@ -37,9 +37,9 @@ rgb(194, 157, 115) //yellow colour
 .instagram-mask:hover,
 .facebook-mask:hover,
 .twitter-mask:hover  {
-    background-color: lineargradient(red, blue, yellow);
+    background-image: linear-gradient(35deg,rgb(54, 134, 139), rgb(33, 83, 87), rgb(54, 134, 139));
     padding: 40px;
-    transition: background-color 0.5s ease, padding 0.5s ease;
+    transition: background-image 0.5s ease, padding 0.5s ease;
 }
 
 .navigation {
