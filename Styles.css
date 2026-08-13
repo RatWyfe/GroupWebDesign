@@ -4,7 +4,8 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     text-align: center;
-    background-image: url(images/aritz-basauri-groom-v007-1002.jpg); /* https://www.artstation.com/artwork/xJnqn4 */
+    background-image: url(LightGrayAbstractTextureBackdropsForPhotographyIBD-24509.webp); /* https://www.artstation.com/artwork/xJnqn4 */
+    background-size: cover;
 }
 
 /*
@@ -40,7 +41,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    position: sticky;
+    position: relative;
     text-align: center;
 }
 
@@ -50,6 +51,7 @@ header {
 
 footer {
     bottom: 0%;
+    color: rgb(33, 83, 87);
 }
 
 header img {
