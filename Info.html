@@ -6,30 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Info Page</title>
   <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="nav.css">
   <link rel="icon" type="image/x-icon" href="images/fav/favicon.ico">
 </head>
 
 <body>
 
   <header>
-    <div>
-      <img src="images/logo.png" alt="Page Logo, Camera Showing">
-      <h1>Alexander Chase Photography</h1>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="Info.html">Info</a>
-      <a href="Portfolio.html">Portfolio</a>
-      <a href="Contact.html">Contact</a>
-    </nav>
-  </header>
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="Page Logo, Camera Showing"></a>
+        </div>
+        <nav >
+            <a class="navigation" href="index.html">Home</a>
+            <a class="navigation" href="Info.html" id="selectedSite">Info</a>
+            <a class="navigation" href="Portfolio.html">Portfolio</a>
+            <a class="navigation" href="Contact.html">Contact</a>
+        </nav>
+        <nav>
+            <a href="https://www.twitter.com" class="twitter-mask"></a>
+            <a href="https://www.Facebook.com" class="facebook-mask"></a>
+            <a href="https://www.instagram.com" class="instagram-mask"></a>
+            <a href="https://www.linkedin.com" class="linkedin-mask"></a>
+        </nav>
+    </header>
 
   <!-- MAIN CONTENT -->
   <main>
 
     <!-- Bio Banner -->
     <div id="clip-base">
-      <h2>Behind the Lens</h2>
+      <h1>Behind the Lens</h1>
       <p id="clip">Hi, I'm Alexander Chase. I specialize in portraiture, street photography, and brand campaigns,
         capturing
         authentic emotion using natural light and bold contrast.</p>
@@ -37,14 +43,14 @@
     <div id="page">
       <!-- Vision -->
       <article>
-        <h3>Vision & Style</h3>
+        <h1>Vision & Style</h1>
         <p>I believe every photograph should tell a story. My style focuses on candid moments, rich tones, and cinematic
           framing—turning simple moments into visual art.</p>
       </article>
 
       <!-- Stats Grid -->
       <article>
-        <h3>By The Numbers</h3>
+        <h1>By The Numbers</h1>
         <div>
           <div>
             <span>6+</span>
@@ -63,13 +69,13 @@
 
       <!-- Gear & Contact CTA -->
       <article>
-        <h3>Gear & Craft</h3>
+        <h1>Gear & Craft</h1>
         <p>Shooting on full-frame mirrorless camera bodies with fast prime lenses (35mm & 85mm) for ultra-sharp focus
           and natural depth of field.</p>
         <a href="contact.html" class="action-button">Book a Session</a>
       </article>
 
-      <h2>Featured Visuals</h2>
+      <h1>Featured Visuals</h1>
       <!-- 
       =================
       Mini Gallery Grid
@@ -79,22 +85,22 @@
 
         <section>
           <img src="images/Editorial Portrait.png" alt="Editorial Portrait">
-          <h4 class="gallery-caption">Editorial Portrait</h4>
+          <h2 class="gallery-caption">Editorial Portrait</h2>
         </section>
 
         <section>
           <img src="images/wedding.png" alt="Wedding Photography">
-          <h4 class="gallery-caption">Wedding photography</h4>
+          <h2 class="gallery-caption">Wedding photography</h2>
         </section>
 
         <section>
           <img src="images/branding.png" alt="Brand Campaign">
-          <h4 class="gallery-caption">Brand Campaign</h4>
+          <h2 class="gallery-caption">Brand Campaign</h2>
         </section>
 
         <section>
           <img src="images/street.png" alt="Street Photography">
-          <h4 class="gallery-caption">Street Photography</h4>
+          <h2 class="gallery-caption">Street Photography</h2>
         </section>
 
       </div>
@@ -102,6 +108,7 @@
   </main>
 
   <footer>
+    <p></p>
     <p>&copy; 2026 Alexander Chase Photography. All Rights Reserved.</p>
   </footer>
 

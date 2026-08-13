@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="Stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" type="image/x-icon" href="images/fav/favicon.ico">
 </head>
+
 <body>
-    
+    <header>
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="Page Logo, Camera Showing"></a>
+        </div>
+        <nav >
+            <a class="navigation" href="index.html">Home</a>
+            <a class="navigation" href="Info.html">Info</a>
+            <a class="navigation" href="Portfolio.html" id="selectedSite">Portfolio</a>
+            <a class="navigation" href="Contact.html">Contact</a>
+        </nav>
+        <nav>
+            <a href="https://www.twitter.com" class="twitter-mask"></a>
+            <a href="https://www.Facebook.com" class="facebook-mask"></a>
+            <a href="https://www.instagram.com" class="instagram-mask"></a>
+            <a href="https://www.linkedin.com" class="linkedin-mask"></a>
+        </nav>
+    </header>
+    <main>
+        <h1>Portfolio</h1>
+        <p>Every picture tells a story, and every story deserves to be remembered. Welcome to our portfolio, where
+            moments are transformed into lasting memories. From the romance of weddings and the beauty of portraits to
+            the wonder of landscapes and the excitement of special events, our photography captures life's most
+            meaningful moments with creativity and authenticity.</p>
+        <p class="view-note">📸 Click on any image to view it in full size.</p>
+        <h4>Wedding Photography</h4>
+        <article class="wedding">
+            <img src="images/AI/thewedding.webp">
+            <img src="images/AI/thewedding2.webp">
+            <img src="images/AI/thewedding3.webp">
+            <img src="images/AI/thewedding4.webp">
+            <img src="images/AI/thewedding5.webp">
+            <img src="images/AI/thewedding66.webp">
+            <img src="images/AI/thewedding7.webp">
+            <img src="images/AI/thewedding88.webp">
+        </article>
+        <h4>Portrait Photography</h4>
+        <article class="portraits">
+            <img src="images/AI/potrai6.webp">
+            <img src="images/AI/potrait2.webp">
+            <img src="images/AI/potrait3.webp">
+            <img src="images/AI/potrait4.webp">
+            <img src="images/AI/potrait5.webp">
+            <img src="images/AI/potrait6.webp">
+            <img src="images/AI/potrait8.webp">
+            <img src="images/AI/thepotrait.webp">
+        </article>
+        <h4>Landscape Photography</h4>
+        <article class="landscape">
+            <img src="images/AI/nature1.webp">
+            <img src="images/AI/nature2.webp">
+            <img src="images/AI/nature3.webp">
+            <img src="images/AI/nature4.webp">
+            <img src="images/AI/nature5.webp">
+            <img src="images/AI/nature6.webp">
+            <img src="images/AI/nature7.webp">
+            <img src="images/AI/thelandscape.webp">
+        </article>
+        <h4>Event Photography</h4>
+        <article class="event">
+            <img src="images/AI/event1.webp">
+            <img src="images/AI/event2.webp">
+            <img src="images/AI/event3.webp">
+            <img src="images/AI/event4.webp">
+            <img src="images/AI/event5.webp">
+            <img src="images/AI/event6.webp">
+            <img src="images/AI/event7.webp">
+            <img src="images/AI/event8.webp">
+        </article>
+    </main>
+    <div id="lightbox" onclick="closeImage()">
+        <img id="lightbox-img">
+    </div>
+    <footer>
+        <p></p>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script> // JavaScript for lightbox functionality on click, images will pop up in a larger view when clicked */
+        const images = document.querySelectorAll('.projects img');
+        images.forEach(function (image) {
+            image.addEventListener('click', function () {
+                document.getElementById('lightbox').style.display = 'flex';
+                document.getElementById('lightbox-img').src = this.src;
+            });
+        });
+        function closeImage() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
 </body>
+
 </html>
