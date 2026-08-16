@@ -1,0 +1,61 @@
+/*
+Pallet from the logo:
+rgb(33, 83, 87) //cyan colour
+rgb(194, 157, 115) //yellow colour
+*/
+
+.linkedin-mask {
+    mask-image: url(images/Masks/LiMask.png);
+}
+
+.instagram-mask {
+    mask-image: url(images/Masks/IgMask.png);
+}
+
+.facebook-mask {
+    mask-image: url(images/Masks/FbMask.png);
+}
+
+.twitter-mask {
+    mask-image: url(images/Masks/TwMask.png);
+}
+
+.linkedin-mask,
+.instagram-mask,
+.facebook-mask,
+.twitter-mask {
+    background-image: linear-gradient(35deg,rgb(33, 83, 87), rgb(44, 109, 114), rgb(33, 83, 87));
+    margin: 0%;
+    padding: 30px;
+    transition: background-image 0.5s ease, padding 0.5s ease;
+    mask-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.linkedin-mask:hover,
+.instagram-mask:hover,
+.facebook-mask:hover,
+.twitter-mask:hover  {
+    background-image: linear-gradient(35deg,rgb(54, 134, 139), rgb(33, 83, 87), rgb(54, 134, 139));
+    padding: 40px;
+    transition: background-image 0.5s ease, padding 0.5s ease;
+}
+
+.navigation {
+    text-decoration: none;
+    color: rgb(33, 83, 87);
+    transition: padding 0.5s ease,color 0.5s ease;
+    padding: 30px;
+    font-size:xx-large;
+}
+
+.navigation:hover {
+    color: rgb(194, 157, 115);
+    transition: color 0.5s ease,padding 0.5s ease;
+    padding: 40px;
+}
+
+#selectedSite {
+    text-decoration: underline;
+}
