@@ -1,40 +1,179 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="Stylesheet" href="Styles.css">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="icon" type="image/x-icon" href="images/fav/favicon.ico">
-</head>
-
-<body>
-    <header>
-        <div>
-            <a href="index.html"><img src="images/logo.png" alt="Page Logo, Camera Showing"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Contact.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="Nia Rowan Photography">
+          <span class="brand-mark">N</span>
+          <span>Nia Rowan</span>
         </div>
-        <nav >
-            <a class="navigation" href="index.html">Home</a>
-            <a class="navigation" href="Info.html">Info</a>
-            <a class="navigation" href="Portfolio.html">Portfolio</a>
-            <a class="navigation" href="Contact.html" id="selectedSite">Contact</a>
-        </nav>
-        <nav>
-            <a href="https://www.twitter.com" class="twitter-mask"></a>
-            <a href="https://www.Facebook.com" class="facebook-mask"></a>
-            <a href="https://www.instagram.com" class="instagram-mask"></a>
-            <a href="https://www.linkedin.com" class="linkedin-mask"></a>
-        </nav>
-    </header>
-    <main>
-        <p>Meow</p>
-    </main>
-    <footer>
-    <p></p>
-        <p>&copy; 2026 Alexander Chase Photography. All Rights Reserved.</p>
-    </footer>
-</body>
 
+        <a href="#contact" class="btn btn-primary">Book sessions</a>
+      </header>
+
+      <main>
+        <section class="hero contact-hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Contact</p>
+            <h1>Let’s create something timeless.</h1>
+            <p class="lead">
+              Whether you’re planning a wedding, a personal portrait, or a brand
+              story, I’d love to hear about your vision and bring it to life
+              through light, emotion, and honest storytelling.
+            </p>
+
+            <div class="contact-pills" aria-label="Quick contact details">
+              <span>Based in Cape Town</span>
+              <span>Available worldwide</span>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Photography studio detail">
+            <div class="image-card">
+              <div class="photo-panel photo-one"></div>
+              <div class="photo-panel photo-two"></div>
+              <div class="card-details">
+                <strong>Next availability</strong>
+                <span>October 2026</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-layout" id="contact">
+          <div class="contact-card form-card">
+            <p class="section-tag">Send a message</p>
+            <h2>Tell me about your project</h2>
+
+            <form class="contact-form">
+              <div class="form-row">
+                <label>
+                  Full name
+                  <input type="text" name="name" placeholder="Your name" />
+                </label>
+                <label>
+                  Email address
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="you@example.com"
+                  />
+                </label>
+              </div>
+
+              <div class="form-row">
+                <label>
+                  Phone number
+                  <input type="tel" name="phone" placeholder="(000) 000-0000" />
+                </label>
+                <label>
+                  Shoot type
+                  <select name="shoot-type">
+                    <option>Wedding</option>
+                    <option>Portrait</option>
+                    <option>Editorial</option>
+                    <option>Commercial</option>
+                    <option>Other</option>
+                  </select>
+                </label>
+              </div>
+
+              <label>
+                Event date / timeline
+                <input type="text" name="date" placeholder="Month / Year" />
+              </label>
+
+              <label>
+                Tell me about your vision
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Share your ideas, location, mood, and any details you’d like captured."
+                ></textarea>
+              </label>
+
+              <button type="submit" class="btn btn-primary full-width">
+                Send enquiry
+              </button>
+            </form>
+          </div>
+
+          <aside
+            class="contact-card info-card"
+            aria-label="Contact details and social links"
+          >
+            <p class="section-tag">Get in touch</p>
+            <h2>Let’s talk photography.</h2>
+
+            <ul class="contact-list">
+              <li>
+                <span class="label">Email</span>
+                <a href="mailto:hello@niarowanphoto.com"
+                  >hello@niarowanphoto.com</a
+                >
+              </li>
+              <li>
+                <span class="label">Phone</span>
+                <a href="tel:+27720000000">+27 72 000 0000</a>
+              </li>
+              <li>
+                <span class="label">Studio</span>
+                <span>12 Long Street, Cape Town</span>
+              </li>
+              <li>
+                <span class="label">Instagram</span>
+                <a href="#">@niarowanphoto</a>
+              </li>
+            </ul>
+
+            <div class="hours-box">
+              <h3>Response time</h3>
+              <p>Usually within 24–48 hours.</p>
+            </div>
+          </aside>
+        </section>
+
+        <section class="availability" aria-label="Booking information">
+          <div>
+            <p class="section-tag">Booking</p>
+            <h2>Availability for 2026</h2>
+          </div>
+
+          <div class="availability-grid">
+            <div>
+              <strong>Wedding</strong>
+              <span>Booked for select weekends</span>
+            </div>
+            <div>
+              <strong>Portraits</strong>
+              <span>Open for autumn sessions</span>
+            </div>
+            <div>
+              <strong>Editorial</strong>
+              <span>Inquire for collaborations</span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 Nia Rowan Photography</p>
+        <div class="footer-links">
+          <a href="#">Instagram</a>
+          <a href="#">Pinterest</a>
+          <a href="#">Behance</a>
+        </div>
+      </footer>
+    </div>
+    <footer>
+      <p></p>
+      <p>&copy; 2026 Alexander Chase Photography. All Rights Reserved.</p>
+    </footer>
+  </body>
 </html>
