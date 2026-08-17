@@ -6,104 +6,140 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Info Page</title>
   <link rel="stylesheet" href="Styles.css">
-    <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="nav.css">
   <link rel="icon" type="image/x-icon" href="images/fav/favicon.ico">
+  <style>
+    article {
+      margin: auto;
+      margin-bottom: 30px;
+      padding: 15px;
+      width: 50%;
+      background-color: rgba(128, 128, 128, 0.096);
+      backdrop-filter: blur(8px);
+      border-radius: 20%;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .contact-button {
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: rgba(128, 128, 128, 0.178);
+      color: black;
+      border-radius: 10%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      width: 30%;
+      transition: color 0.5s ease,box-shadow 0.5s ease;
+    }
+
+    .contact-button:hover {
+      color: gray;
+      box-shadow: 1px 1px 10px;
+      transition: color 0.5s ease,box-shadow 0.5s ease;
+    }
+  </style>
 </head>
 
 <body>
 
   <header>
-        <div>
-            <a href="index.html"><img src="images/logo.png" alt="Page Logo, Camera Showing"></a>
-        </div>
-        <nav >
-            <a class="navigation" href="index.html">Home</a>
-            <a class="navigation" href="Info.html" id="selectedSite">Info</a>
-            <a class="navigation" href="Portfolio.html">Portfolio</a>
-            <a class="navigation" href="Contact.html">Contact</a>
-        </nav>
-        <nav>
-            <a href="https://www.twitter.com" class="twitter-mask"></a>
-            <a href="https://www.Facebook.com" class="facebook-mask"></a>
-            <a href="https://www.instagram.com" class="instagram-mask"></a>
-            <a href="https://www.linkedin.com" class="linkedin-mask"></a>
-        </nav>
-    </header>
+    <div>
+      <a href="index.html"><img src="images/logo.png" alt="Page Logo, Camera Showing"></a>
+    </div>
+    <nav>
+      <a class="navigation" href="index.html">Home</a>
+      <a class="navigation" href="Info.html" id="selectedSite">Info</a>
+      <a class="navigation" href="Portfolio.html">Portfolio</a>
+      <a class="navigation" href="Contact.html">Contact</a>
+    </nav>
+    <nav>
+      <a href="https://www.twitter.com" class="twitter-mask"></a>
+      <a href="https://www.Facebook.com" class="facebook-mask"></a>
+      <a href="https://www.instagram.com" class="instagram-mask"></a>
+      <a href="https://www.linkedin.com" class="linkedin-mask"></a>
+    </nav>
+  </header>
 
   <!-- MAIN CONTENT -->
   <main>
 
     <!-- Bio Banner -->
-    <div id="clip-base">
+    <article>
       <h1>Behind the Lens</h1>
-      <p id="clip">Hi, I'm Alexander Chase. I specialize in portraiture, street photography, and brand campaigns,
+      <p>Hi, I'm Alexander Chase. I specialize in portraiture, street photography, and brand campaigns,
         capturing
         authentic emotion using natural light and bold contrast.</p>
-    </div>
-    <div id="page">
-      <!-- Vision -->
-      <article>
-        <h1>Vision & Style</h1>
-        <p>I believe every photograph should tell a story. My style focuses on candid moments, rich tones, and cinematic
-          framing—turning simple moments into visual art.</p>
-      </article>
+    </article>
+    <!-- Vision -->
+    <article>
+      <h1>Vision & Style</h1>
+      <p>I believe every photograph should tell a story. My style focuses on candid moments, rich tones, and cinematic
+        framing—turning simple moments into visual art.</p>
+    </article>
 
-      <!-- Stats Grid -->
-      <article>
-        <h1>By The Numbers</h1>
-        <div style="color: rgb(33, 83, 87)">
-          <div>
-            <span>6+</span>
-            <span>Years Exp</span>
-          </div>
-          <div>
-            <span>50+</span>
-            <span>Projects</span>
-          </div>
-          <div>
-            <span>12</span>
-            <span>Exhibits</span>
-          </div>
+    <!-- Stats Grid -->
+    <article>
+      <h1>By The Numbers</h1>
+      <div>
+        <div>
+          <span>6+</span>
+          <span>Years Exp</span>
         </div>
-      </article>
+        <div>
+          <span>50+</span>
+          <span>Projects</span>
+        </div>
+        <div>
+          <span>12</span>
+          <span>Exhibits</span>
+        </div>
+      </div>
+    </article>
 
-      <!-- Gear & Contact CTA -->
-      <article>
-        <h1>Gear & Craft</h1>
-        <p>Shooting on full-frame mirrorless camera bodies with fast prime lenses (35mm & 85mm) for ultra-sharp focus
-          and natural depth of field.</p>
-        <a href="contact.html" class="action-button">Book a Session</a>
-      </article>
+    <!-- Gear & Contact CTA -->
+    <article>
+      <h1>Gear & Craft</h1>
+      <p>Shooting on full-frame mirrorless camera bodies with fast prime lenses (35mm & 85mm) for ultra-sharp focus
+        and natural depth of field.</p>
+      <a href="contact.html">
+        <div class="contact-button">
+          Book a Session
+        </div>
+      </a>
+    </article>
 
-      <h1>Featured Visuals</h1>
-      <!-- 
+    <h1>Featured Visuals</h1>
+    <!-- 
       =================
       Mini Gallery Grid
-      ================= 
+      =================
        -->
-      <div class="display">
+    <div class="display">
 
-        <section>
-          <img src="images/Editorial Portrait.png" width="500" height="500" alt="Editorial Portrait">
-          <h2 class="gallery-caption", style="color: rgb(33, 83, 87);">Editorial Portrait</h2>
-        </section>
+      <section>
+        <img src="images/Editorial Portrait.png" alt="Editorial Portrait">
+        <h2>Editorial Portrait</h2>
+      </section>
 
-        <section>
-          <img src="images/wedding.png" width="500" height="500" alt="Wedding Photography">
-          <h2 class="gallery-caption", style="color: rgb(33, 83, 87);">Wedding photography</h2>
-        </section>
+      <section>
+        <img src="images/wedding.png" alt="Wedding Photography">
+        <h2>Wedding photography</h2>
+      </section>
 
-        <section>
-          <img src="images/AI/event5.webp" width="500" height="500" alt="Events Photography">
-          <h2 class="gallery-caption", style="color: rgb(33, 83, 87);">Events Photography</h2>
-        </section>
+      <section>
+        <img src="images/LandscapePic.jpg" alt="Brand Campaign" height="250" width="auto">
+        <h2>Landscape</h2>
+      </section>
 
-        <section>
-          <img src="images/AI/nature2.webp" width="500" height="500" alt="Landscape Photography">
-          <h2 class="gallery-caption", style="color: rgb(33, 83, 87);">Landscape Photography</h2>
-        </section>
+      <section>
+        <img src="images/EventsPic.webp" alt="Street Photography" height="250">
+        <h2>Events</h2>
+      </section>
 
-      </div>
     </div>
   </main>
 

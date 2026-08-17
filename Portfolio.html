@@ -7,7 +7,84 @@
     <title>Portfolio</title>
     <link rel="Stylesheet" href="Styles.css">
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="lightbox.css">
+    <style>
+        .wedding,
+        .portraits,
+        .landscape,
+        .event {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-size: cover;
+        }
+
+        .wedding {
+            background-image: url(images/Wedding/WedBackDrop.jpg);
+        }
+
+        .portraits {
+            background-image: url(images/Portait/Portrait_Backdrop.jpg);
+        }
+
+        .landscape {
+            background-image: url(images/Landscape/LandscapeBackdrop.jpg);
+        }
+
+        .event {
+            background-image: url(images/Events/EventBackdrop.jpg);
+        }
+
+        .wedding img,
+        .portraits img,
+        .landscape img,
+        .event img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.5s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .wedding img:hover,
+        .portraits img:hover,
+        .landscape img:hover,
+        .event img:hover {
+            transform: scale(1.05) translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Lightbox Styles */
+        #lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        #lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .view-note {
+            background-image: url(images/CamPreview.jpg);
+            padding-bottom: 100px;
+            padding-top: 100px;
+            background-size: cover;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
     <link rel="icon" type="image/x-icon" href="images/fav/favicon.ico">
 </head>
 
@@ -35,50 +112,56 @@
             moments are transformed into lasting memories. From the romance of weddings and the beauty of portraits to
             the wonder of landscapes and the excitement of special events, our photography captures life's most
             meaningful moments with creativity and authenticity.</p>
-        <p class="view-note">📸 Click on any image to view it in full size.</p>
+        <p class="view-note">Click on any image to view it in full size.</p>
         <h4>Wedding Photography</h4>
         <article class="wedding">
-            <img src="images/AI/thewedding.webp">
-            <img src="images/AI/thewedding2.webp">
-            <img src="images/AI/thewedding3.webp">
-            <img src="images/AI/thewedding4.webp">
-            <img src="images/AI/thewedding5.webp">
-            <img src="images/AI/thewedding66.webp">
-            <img src="images/AI/thewedding7.webp">
-            <img src="images/AI/thewedding88.webp">
+            <img src="images/Wedding/Wed1.webp">
+            <img src="images/Wedding/Wed2.png">
+            <img src="images/Wedding/Wed3.png">
+            <img src="images/Wedding/Wed4.png">
+            <img src="images/Wedding/Wed5.png">
+            <img src="images/Wedding/Wed6.png">
+            <img src="images/Wedding/Wed7.png">
+            <img src="images/Wedding/Wed8.png">
+            <img src="images/Wedding/Wed9.png">
         </article>
         <h4>Portrait Photography</h4>
         <article class="portraits">
-            <img src="images/AI/potrai6.webp">
-            <img src="images/AI/potrait2.webp">
-            <img src="images/AI/potrait3.webp">
-            <img src="images/AI/potrait4.webp">
-            <img src="images/AI/potrait5.webp">
-            <img src="images/AI/potrait6.webp">
-            <img src="images/AI/potrait8.webp">
-            <img src="images/AI/thepotrait.webp">
+            <img src="images/Portait/Portrait1.png">
+            <img src="images/Portait/Portrait2.png">
+            <img src="images/Portait/Street_Portrait.webp">
+            <img src="images/Portait/Portrait3.jpg">
+            <img src="images/Portait/Portrait4.jpg">
+            <img src="images/Portait/Portrait5.jpg">
+            <img src="images/Portait/Portrait8.jpg">
+            <img src="images/Portait/Portrait6.jpg">
+            <img src="images/Portait/Portrait7.png">
         </article>
         <h4>Landscape Photography</h4>
         <article class="landscape">
-            <img src="images/AI/nature1.webp">
-            <img src="images/AI/nature2.webp">
-            <img src="images/AI/nature3.webp">
-            <img src="images/AI/nature4.webp">
-            <img src="images/AI/nature5.webp">
-            <img src="images/AI/nature6.webp">
-            <img src="images/AI/nature7.webp">
-            <img src="images/AI/thelandscape.webp">
+            <img src="images/Landscape/Landscape1.png">
+            <img src="images/Landscape/Landscape2.png">
+            <img src="images/Landscape/Landscape3.png">
+            <img src="images/Landscape/Landscape4.png">
+            <img src="images/Landscape/Landscape5.png">
+            <img src="images/Landscape/Landscape6.png">
+            <img src="images/Landscape/Landscape7.jpg">
+            <img src="images/Landscape/Landscape9.jpg">
+            <img src="images/Landscape/Landscape8.jpg">
+
         </article>
         <h4>Event Photography</h4>
         <article class="event">
-            <img src="images/AI/event1.webp">
-            <img src="images/AI/event2.webp">
-            <img src="images/AI/event3.webp">
-            <img src="images/AI/event4.webp">
-            <img src="images/AI/event5.webp">
-            <img src="images/AI/event6.webp">
-            <img src="images/AI/event7.webp">
-            <img src="images/AI/event8.webp">
+            <img src="images/Events/Event1.jpg">
+            <img src="images/Events/Event2.jpg">
+            <img src="images/Events/Event3.jpg">
+            <img src="images/Events/Event5.jpg">
+            <img src="images/Events/Event6.jpg">
+            <img src="images/Events/Outdoor-event.jpg">
+            <img src="images/Events/Event7.jpg">
+            <img src="images/Events/Event8.webp">
+            <img src="images/Events/Event9.jpg">
+
         </article>
     </main>
     <div id="lightbox" onclick="closeImage()">

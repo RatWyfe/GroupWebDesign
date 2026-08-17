@@ -26,7 +26,7 @@ rgb(194, 157, 115) //yellow colour
 .twitter-mask {
     background-image: linear-gradient(35deg,rgb(33, 83, 87), rgb(44, 109, 114), rgb(33, 83, 87));
     margin: 0%;
-    padding: 30px;
+    padding: 10px;
     transition: background-image 0.5s ease, padding 0.5s ease;
     mask-size: cover;
     display: inline-block;
@@ -38,21 +38,23 @@ rgb(194, 157, 115) //yellow colour
 .facebook-mask:hover,
 .twitter-mask:hover  {
     background-image: linear-gradient(35deg,rgb(54, 134, 139), rgb(33, 83, 87), rgb(54, 134, 139));
-    padding: 40px;
+    padding: 15px;
     transition: background-image 0.5s ease, padding 0.5s ease;
 }
 
 .navigation {
     text-decoration: none;
     color: rgb(33, 83, 87);
-    transition: padding 0.5s ease,color 0.5s ease;
-    padding: 30px;
+    margin: 10px;
+    transition: padding 0.5s ease,margin 0.5s ease;
+    font-size:xx-large;
 }
 
 .navigation:hover {
     color: rgb(194, 157, 115);
-    transition: color 0.5s ease,padding 0.5s ease;
-    padding: 40px;
+    text-shadow: 1px 1px 10px black;
+    margin: 20px;
+    transition: color 0.5s ease,margin 0.5s ease;
 }
 
 #selectedSite {
