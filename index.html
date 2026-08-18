@@ -10,8 +10,8 @@
     <link rel="icon" type="image/x-icon" href="images/fav/favicon.ico">
 </head>
 
-<body>
-    <header>
+<body id="main">
+    <header >
         <div>
             <a href="index.html"><img src="images/logo.png" alt="Page Logo, Camera Showing"></a>
         </div>
@@ -27,8 +27,15 @@
             <a class="instagram-mask" href="https://www.instagram.com"></a>
             <a class="linkedin-mask" href="https://www.linkedin.com"></a>
         </nav>
+        
     </header>
-    <main>
+
+    <main> 
+        <div class="eyebrow">
+                 Portrait-Weddings-Editorials
+                </div>
+                <h1>Stories in light</h1>
+                <p>Timeless photography for every moment</p>
         <h1>The images we create together will feel like memories already lived.</h1>
 
 
@@ -37,25 +44,34 @@
 
 
 Your story matters. And it should be told in a way that feels like you.</h3>
-        <section class="container">
-            <div class="slider-wrapper">
-                <div class="slider">
-                    <img id="slide1"src="images/slide1.jpg">
-                    <img id="slide2"src="images/slide2.jpg">
-                    <img id="slide3"src="images/slide3.jpg">
-                    <img id="slide4"src="images/slide4.jpg">
-                    <img id="slide5"src="images/slide5.jpg">
+ <img id="slide" src="images/header.jpg">
 
-                </div>
-                <div class="slider-nav">
-                    <a href="#slide1"></a>
-                    <a href="#slide2"></a>
-                    <a href="#slide3"></a>
-                    <a href="#slide4"></a>
-                    <a href="#slide5"></a>
-                </div>
-            </div>
-        </section>
+    <script>
+        let images = [
+            "images/slide1.jpg",
+            "images/slide2.jpg",
+            "images/slide3.jpg",
+            "images/slide4.jpg",
+            "images/header.jpg",
+            "images/Landscape/Landscape7.jpg"
+        ];
+
+        let i = 0;
+
+        setInterval(function() {
+            i++;
+
+            if (i >= images.length) {
+                i = 0;
+            }
+
+            document.getElementById("slide").src = images[i];
+
+        }, 3000);
+    </script>
+
+
+                
     </main>
     <footer>
         <P></P>
