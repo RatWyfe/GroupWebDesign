@@ -132,4 +132,11 @@ h4 {
     font-size: xx-large;
     font-weight: 1500;
 }
+img {
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 50px;
+    border-radius: 15px;
+}
 
