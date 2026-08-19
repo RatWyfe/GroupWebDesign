@@ -1,187 +1,164 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="Contact.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <div class="brand">
-          <span class="brand-mark"
-            ><a href=""><img src="images/logo.png" alt="" /></a
-          ></span>
-          <span>Alexander Chase photography</span>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="icon" type="image/x-icon" href="images/fav/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="Page Logo, Camera Showing"></a>
         </div>
-
         <nav>
-          <a class="navigation" href="index.html">Home</a>
-          <a class="navigation" href="Info.html">Info</a>
-          <a class="navigation" href="Portfolio.html">Portfolio</a>
-          <a class="navigation" href="Contact.html" id="selectedSite"
-            >Contact</a
-          >
+            <a class="navigation" href="index.html">Home</a>
+            <a class="navigation" href="Info.html">Info</a>
+            <a class="navigation" href="Portfolio.html">Portfolio</a>
+            <a class="navigation" href="Contact.html" id="selectedSite">Contact</a>
         </nav>
-
-        <div class="header-actions">
-          <a href="#contact" class="btn btn-primary">Book sessions</a>
-          <nav class="social-links">
+        <nav>
             <a class="twitter-mask" href="https://www.twitter.com"></a>
-            <a class="facebook-mask" href="https://www.facebook.com"></a>
+            <a class="facebook-mask" href="https://www.Facebook.com"></a>
             <a class="instagram-mask" href="https://www.instagram.com"></a>
             <a class="linkedin-mask" href="https://www.linkedin.com"></a>
-          </nav>
-        </div>
-      </header>
+        </nav>
+    </header>
 
-      <main>
+    <main>
         <section class="hero contact-hero">
-          <div class="hero-copy">
-            <p class="eyebrow">Contact</p>
-            <h1>Let's create something timeless.</h1>
-            <p class="lead">
-              Whether you're planning a wedding, a personal portrait, or a brand
-              story, I'd love to hear about your vision and bring it to life
-              through light, emotion, and honest storytelling.
-            </p>
-          </div>
+            <div class="hero-copy">
+                <h1>Let's create something timeless.</h1>
+                <p class="lead">
+                    Whether you're planning a wedding, a personal portrait, or a brand
+                    story, I'd love to hear about your vision and bring it to life
+                    through light, emotion, and honest storytelling.
+                </p>
+            </div>
         </section>
 
         <section class="contact-layout" id="contact">
-          <div class="contact-card form-card">
-            <p class="section-tag">Send a message</p>
-            <h2>Tell me about your project</h2>
+            <div class="contact-card form-card">
+                <p class="section-tag">Send a message</p>
+                <h2>Tell me about your project</h2>
 
-            <form class="contact-form">
-              <div class="form-row">
-                <label>
-                  Full name
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Your name"
-                    pattern="^[A-Za-zÀ-ÿ]+(?: [A-Za-zÀ-ÿ]+)+$"
-                    title="Please enter your first and last name separated by a space."
-                    required
-                  />
-                </label>
-                <label>
-                  Email address
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="you@example.com"
-                    required
-                  />
-                </label>
-              </div>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <label>
+                            Full name
+                            <input type="text" name="name" placeholder="Your name"
+                                pattern="^[A-Za-zÀ-ÿ]+(?: [A-Za-zÀ-ÿ]+)+$"
+                                title="Please enter your first and last name separated by a space." required />
+                        </label>
+                        <label>
+                            Email address
+                            <input type="email" name="email" placeholder="you@example.com" required />
+                        </label>
+                    </div>
 
-              <div class="form-row">
-                <label>
-                  Phone number
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="(000) 000-0000"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    required
-                  />
-                </label>
-                <label>
-                  Shoot type
-                  <select name="shoot-type" required>
-                    <option>Wedding</option>
-                    <option>Portrait</option>
-                    <option>Editorial</option>
-                    <option>Commercial</option>
-                    <option>Other</option>
-                  </select>
-                </label>
-              </div>
+                    <div class="form-row">
+                        <label>
+                            Phone number
+                            <input type="tel" name="phone" placeholder="(000) 000-0000"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                        </label>
+                        <label>
+                            Shoot type
+                            <select name="shoot-type" required>
+                                <option>Wedding</option>
+                                <option>Portrait</option>
+                                <option>Editorial</option>
+                                <option>Commercial</option>
+                                <option>Other</option>
+                            </select>
+                        </label>
+                    </div>
 
-              <label>
-                Event date / timeline
-                <input
-                  type="text"
-                  name="date"
-                  placeholder="Month / Year"
-                  required
-                />
-              </label>
+                    <label>
+                        Event date / timeline
+                        <input type="date" name="date" placeholder="Month / Year" required />
+                    </label>
 
-              <label>
-                Tell me about your vision
-                <textarea
-                  name="message"
-                  rows="5"
-                  placeholder="Share your ideas, location, mood, and any details you'd like captured."
-                ></textarea>
-              </label>
+                    <label>
+                        Tell me about your vision
+                        <textarea name="message" rows="5"
+                            placeholder="Share your ideas, location, mood, and any details you'd like captured."></textarea>
+                    </label>
 
-              <button type="submit" class="btn btn-primary full-width">
-                Send enquiry
-              </button>
-            </form>
-          </div>
-
-          <aside class="contact-card info-card">
-            <p class="section-tag">Get in touch</p>
-            <h2>Let's talk photography.</h2>
-
-            <ul class="contact-list">
-              <li>
-                <span class="label">Email</span>
-                <a href="#">alexanderchase@gmail.com</a>
-              </li>
-              <li>
-                <span class="label">Phone</span>
-                <a href="tel:+27720000000">+27 72 000 0000</a>
-              </li>
-              <li>
-                <span class="label">Studio</span>
-                <span>12 Long Street, Cape Town</span>
-              </li>
-              <li>
-                <span class="label">Instagram</span>
-                <a href="#">@AlexChase</a>
-              </li>
-            </ul>
-
-            <div class="hours-box">
-              <h3>Response time</h3>
-              <p>Usually within 24-48 hours.</p>
+                    <button type="submit">
+                        Send enquiry
+                    </button>
+                </form>
             </div>
-          </aside>
+
+            <aside class="contact-card info-card">
+                <p class="section-tag">Get in touch</p>
+                <h2>Let's talk photography.</h2>
+
+                <ul class="contact-list">
+                    <li>
+                        <span class="label">Email</span>
+                        <a href="mailto:alexanderchase@gmail.com">alexanderchase@gmail.com</a>
+                    </li>
+                    <li>
+                        <span class="label">Phone</span>
+                        <a href="tel:+27720000000">+27 72 000 0000</a>
+                    </li>
+                    <li>
+                        <span class="label">Studio</span>
+                        <span>12 Long Street, Cape Town</span>
+                    </li>
+                    <li>
+                        <span class="label">Instagram</span>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">@AlexChase</a>
+                    </li>
+                </ul>
+
+                <div class="hours-box">
+                    <h3>Response time</h3>
+                    <p>Usually within 24-48 hours.</p>
+                </div>
+            </aside>
+        <!--Below be the google maps thing sir wanted using the address you entered-->
+        <section class="contact-card" style="grid-column: 1/3;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d311.58886344250203!2d18.422083634463146!3d-33.91948150829826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc676136e4ada5%3A0xc2fc7599e0eb8fa3!2s12%20Long%20St%2C%20Cape%20Town%20City%20Centre%2C%20Cape%20Town%2C%208000!5e1!3m2!1sen!2sza!4v1787165895236!5m2!1sen!2sza"
+                width="100%" height="450" style="border-radius: 10px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
         </section>
 
         <section class="availability">
-          <div>
-            <p class="section-tag">Booking</p>
-            <h2>Availability for 2026</h2>
-          </div>
+            <div>
+                <h2>Availability for 2026</h2>
+            </div>
 
-          <div class="availability-grid">
-            <div>
-              <strong>Wedding</strong>
-              <span>Booked for select weekends</span>
+            <div class="availability-grid">
+                <div>
+                    <strong>Wedding</strong>
+                    <span>Booked for select weekends</span>
+                </div>
+                <div>
+                    <strong>Portraits</strong>
+                    <span>Open for autumn sessions</span>
+                </div>
+                <div>
+                    <strong>Editorial</strong>
+                    <span>Inquire for collaborations</span>
+                </div>
             </div>
-            <div>
-              <strong>Portraits</strong>
-              <span>Open for autumn sessions</span>
-            </div>
-            <div>
-              <strong>Editorial</strong>
-              <span>Inquire for collaborations</span>
-            </div>
-          </div>
         </section>
-      </main>
-    </div>
+    </main>
+
     <footer>
-      <p></p>
-      <p>&copy; 2026 Alexander Chase Photography. All Rights Reserved.</p>
+        <p></p>
+        <p>&copy; 2026 Alexander Chase Photography. All Rights Reserved.</p>
     </footer>
-  </body>
+</body>
+
 </html>
