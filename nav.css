@@ -5,19 +5,19 @@ rgb(194, 157, 115) //yellow colour
 */
 
 .linkedin-mask {
-    mask-image: url(images/Masks/LiMask.png);
+    mask-image: url(images/Masks/LiMask.webp);
 }
 
 .instagram-mask {
-    mask-image: url(images/Masks/IgMask.png);
+    mask-image: url(images/Masks/IgMask.webp);
 }
 
 .facebook-mask {
-    mask-image: url(images/Masks/FbMask.png);
+    mask-image: url(images/Masks/FbMask.webp);
 }
 
 .twitter-mask {
-    mask-image: url(images/Masks/TwMask.png);
+    mask-image: url(images/Masks/TwMask.webp);
 }
 
 .linkedin-mask,
