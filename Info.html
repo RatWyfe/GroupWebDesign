@@ -47,6 +47,21 @@
       box-shadow: 20px 20px 20px 15px rgba(0, 0, 0, 0.2);
 
     }
+    
+    /* Responsive Design for mobile /smaller screens */
+    @media screen and (max-width: 900px) {
+     .featured {
+      display:block;  /* Stack the images vertically on small screens */
+    }
+  
+  .featured img {
+    width: 100%;  
+    margin-bottom: 16px; /* Add some space between images */
+  }
+}
+
+
+    
   </style>
 </head>
 
@@ -124,7 +139,7 @@
       Mini Gallery Grid
       =================
        -->
-    <div class="display">
+    <div class="display featured">
 
       <section>
         <img src="images/Editorial Portrait.png" alt="Editorial Portrait">
