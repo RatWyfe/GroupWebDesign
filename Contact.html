@@ -58,7 +58,14 @@
               <div class="form-row">
                 <label>
                   Full name
-                  <input type="text" name="name" placeholder="Your name" />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    pattern="^[A-Za-zÀ-ÿ]+(?: [A-Za-zÀ-ÿ]+)+$"
+                    title="Please enter your first and last name separated by a space."
+                    required
+                  />
                 </label>
                 <label>
                   Email address
@@ -66,6 +73,7 @@
                     type="email"
                     name="email"
                     placeholder="you@example.com"
+                    required
                   />
                 </label>
               </div>
@@ -73,11 +81,17 @@
               <div class="form-row">
                 <label>
                   Phone number
-                  <input type="tel" name="phone" placeholder="(000) 000-0000" />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="(000) 000-0000"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required
+                  />
                 </label>
                 <label>
                   Shoot type
-                  <select name="shoot-type">
+                  <select name="shoot-type" required>
                     <option>Wedding</option>
                     <option>Portrait</option>
                     <option>Editorial</option>
@@ -89,7 +103,12 @@
 
               <label>
                 Event date / timeline
-                <input type="text" name="date" placeholder="Month / Year" />
+                <input
+                  type="text"
+                  name="date"
+                  placeholder="Month / Year"
+                  required
+                />
               </label>
 
               <label>
@@ -114,9 +133,7 @@
             <ul class="contact-list">
               <li>
                 <span class="label">Email</span>
-                <a href="mailto:hello@niarowanphoto.com"
-                  >hello@niarowanphoto.com</a
-                >
+                <a href="#">alexanderchase@gmail.com</a>
               </li>
               <li>
                 <span class="label">Phone</span>
@@ -128,7 +145,7 @@
               </li>
               <li>
                 <span class="label">Instagram</span>
-                <a href="#">@niarowanphoto</a>
+                <a href="#">@AlexChase</a>
               </li>
             </ul>
 

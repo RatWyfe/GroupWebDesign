@@ -1,4 +1,5 @@
 :root {
+  /* Main colors for the page */
   --bg: #f7f2ee;
   --bg-strong: #efe5df;
   --panel: rgba(255, 255, 255, 0.7);
@@ -17,6 +18,7 @@ html {
 }
 
 .navigation {
+  /* Styles for the navigation links */
   text-decoration: none;
   color: rgb(33, 83, 87);
   margin: 10px;
@@ -59,6 +61,7 @@ html {
 .instagram-mask,
 .facebook-mask,
 .twitter-mask {
+  /* Social media icons */
   background-image: linear-gradient(
     35deg,
     rgb(33, 83, 87),
@@ -104,6 +107,7 @@ html {
 }
 
 body {
+  /* Page background and text */
   margin: 0;
   min-height: 100vh;
   font-family: "Times New Roman", Times, serif;
@@ -124,6 +128,7 @@ textarea {
 }
 
 .page-shell {
+  /* Main page container */
   width: 100%;
   margin: 0 auto;
   padding: 18px 20px 28px;
@@ -134,6 +139,7 @@ textarea {
 }
 
 .topbar {
+  /* Header layout */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -181,6 +187,7 @@ textarea {
 }
 
 .hero {
+  /* Intro section */
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -247,6 +254,7 @@ textarea {
 }
 
 .image-card {
+  /* Image area beside the intro */
   position: relative;
   width: min(420px, 100%);
   min-height: 520px;
@@ -313,6 +321,7 @@ textarea {
 }
 
 .contact-layout {
+  /* Form and contact information columns */
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
   gap: 28px;
@@ -331,6 +340,7 @@ textarea {
 }
 
 .contact-form {
+  /* Contact form fields */
   display: grid;
   gap: 20px;
 }
@@ -409,6 +419,7 @@ textarea {
 }
 
 .availability {
+  /* Availability details */
   margin: 26px 18px 10px;
   padding: 28px 20px 14px;
   border-top: 1px solid var(--line);
@@ -442,6 +453,7 @@ textarea {
 }
 
 .site-footer {
+  /* Footer layout */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -462,6 +474,7 @@ textarea {
 }
 
 @media (max-width: 860px) {
+  /* Stack content on smaller screens */
   .topbar,
   .site-footer {
     flex-direction: column;
@@ -485,6 +498,7 @@ textarea {
 }
 
 @media (max-width: 520px) {
+  /* Extra small screen adjustments */
   .page-shell {
     width: 100%;
     margin: 0 auto;
