@@ -84,6 +84,67 @@
             color: white;
             margin-top: 20px;
         }
+/* ========================= */
+/* Tablet View */
+/* ========================= */
+
+@media screen and (max-width: 768px)
+{
+    .wedding,
+    .portraits,
+    .landscape,
+    .event
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main p
+    {
+        max-width: 80%;
+    }
+}
+
+/* ========================= */
+/* Mobile View */
+/* ========================= */
+
+@media screen and (max-width: 480px)
+{
+    .wedding,
+    .portraits,
+    .landscape,
+    .event
+    {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .wedding img,
+    .portraits img,
+    .landscape img,
+    .event img
+    {
+        height: 220px;
+    }
+
+    h1
+    {
+        font-size: 1.8rem;
+    }
+
+    h4
+    {
+        font-size: 1.5rem;
+    }
+
+    main p { /*Allows for bigger paragraph view on small screens*/
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+}
+}
+
+</style>
     </style>
     <link rel="icon" type="image/x-icon" href="images/fav/favicon.ico">
 </head>
