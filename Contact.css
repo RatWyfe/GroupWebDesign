@@ -1,3 +1,10 @@
+.contact-page main {
+    width: min(1100px, calc(100% - 2rem));
+    min-width: 0;
+    max-width: 1100px;
+    box-sizing: border-box;
+}
+
 .contact-hero {
     margin-bottom: 20px;
 }
@@ -30,9 +37,10 @@
 
 .contact-layout {
     display: grid;
-    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-columns: 1fr;
     gap: 30px;
     margin: 20px auto;
+    width: 100%;
     max-width: 1100px;
     text-align: left;
 }
@@ -45,6 +53,21 @@
     border: 1px solid rgba(33, 83, 87, 0.2);
     padding: 35px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    min-width: 0;
+}
+
+.map-card {
+    grid-column: 1 / -1;
+}
+
+.map-card iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 260px;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 10px;
 }
 
 .contact-card h2 {
@@ -62,7 +85,7 @@
 
 .form-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -192,6 +215,7 @@ button:hover {
 
 .availability {
     margin: 40px auto 10px;
+    width: 100%;
     max-width: 1100px;
     padding-top: 30px;
     border-top: 1px solid rgba(33, 83, 87, 0.2);
@@ -205,7 +229,7 @@ button:hover {
 
 .availability-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -240,12 +264,22 @@ button:hover {
 
 /* Tablet View */
 @media screen and (max-width: 900px) {
-    .contact-layout {
+    .contact-page header {
         grid-template-columns: 1fr;
+        gap: 12px;
     }
 
-    .availability-grid {
-        grid-template-columns: 1fr;
+    .contact-page header > div,
+    .contact-page header > nav {
+        justify-content: center;
+    }
+
+    .contact-page .navigation {
+        font-size: clamp(1.25rem, 4vw, 1.8rem);
+    }
+
+    .contact-page header > nav:last-child {
+        gap: 8px;
     }
 
     .hero-copy h1 {
@@ -253,10 +287,58 @@ button:hover {
     }
 }
 
+@media screen and (min-width: 701px) {
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .contact-page header {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1.3fr 0.7fr;
+    }
+
+    .availability-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /* Mobile View */
 @media screen and (max-width: 550px) {
-    .form-row {
-        grid-template-columns: 1fr;
+    .contact-page main {
+        width: min(100% - 1.5rem, 1100px);
+        margin-top: 1.5rem;
+        padding-bottom: 5dvh;
+    }
+
+    .contact-page header {
+        padding: 10px 8px;
+    }
+
+    .contact-page header img {
+        width: 92px;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .contact-page .navigation {
+        margin: 4px 6px;
+        font-size: 1.15rem;
+    }
+
+    .contact-page .linkedin-mask,
+    .contact-page .instagram-mask,
+    .contact-page .facebook-mask,
+    .contact-page .twitter-mask {
+        padding: 8px;
+    }
+
+    .contact-page .contact-layout {
+        gap: 16px;
     }
 
     .contact-card {
@@ -265,5 +347,18 @@ button:hover {
 
     .hero-copy h1 {
         font-size: 1.8rem;
+    }
+
+    .hero-copy .lead {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .contact-card h2 {
+        font-size: 1.6rem;
+    }
+
+    .map-card iframe {
+        min-height: 220px;
     }
 }
